@@ -14,8 +14,8 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long expected = 9;
-        long actual = service.moreThanAvg(sales);
-        Assertions.assertEquals(expected, actual);
+        int expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
+        long actual = service.avgSales(sales);
+       Assertions.assertEquals(expected, actual);
     }
 }
